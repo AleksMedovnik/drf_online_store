@@ -13,7 +13,7 @@ class Product(models.Model):
         ]
     )
     color = models.ForeignKey('Color', on_delete=models.PROTECT)
-    category = models.ForeignKey('categories.Category', on_delete=models.PROTECT)
+    # category = models.ForeignKey('categories.Category', on_delete=models.PROTECT)
 
     class Meta:
         abstract = True

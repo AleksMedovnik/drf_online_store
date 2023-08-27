@@ -1,11 +1,10 @@
 from rest_framework import serializers
 from ..models import MobilePhone
-from ...categories.models import Category
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 class MobilePhoneModelSerializer(serializers.ModelSerializer):
-    category_id = serializers.IntegerField(default=1)
+    # category_id = serializers.IntegerField(default=1)
 
     class Meta:
         model = MobilePhone
@@ -15,13 +14,13 @@ class MobilePhoneModelSerializer(serializers.ModelSerializer):
             "info",
             "price",
             "color",
-            'category_id',
             "screen_diagonal",
             "battery_capacity",
             "resolution_main_camera",
             "maker",
             "os",
-            "ram"
+            "ram",
+            # 'category_id',
         )
 
 

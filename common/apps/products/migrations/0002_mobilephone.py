@@ -8,7 +8,6 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('categories', '0001_initial'),
         ('products', '0001_initial'),
     ]
 
@@ -23,7 +22,6 @@ class Migration(migrations.Migration):
                 ('screen_diagonal', models.FloatField()),
                 ('battery_capacity', models.IntegerField()),
                 ('resolution_main_camera', models.FloatField()),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='categories.category')),
                 ('color', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='products.color')),
                 ('maker', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='products', to='products.maker')),
                 ('os', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='products', to='products.os')),

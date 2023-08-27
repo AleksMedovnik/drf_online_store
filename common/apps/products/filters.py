@@ -23,7 +23,6 @@ class MobilePhoneFilter(django_filters.FilterSet):
             'pk',
             'id',
             'title',
-            'category',
             'maker',
             'os',
             'color',

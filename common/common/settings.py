@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django_filters',
     'apps.shared.apps.SharedConfig',
     'apps.users.apps.UsersConfig',
-    'apps.categories.apps.CategoriesConfig',
+    # 'apps.categories.apps.CategoriesConfig',
     'apps.products.apps.ProductsConfig',
     'apps.orders.apps.OrdersConfig',
 ]
